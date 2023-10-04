@@ -6,28 +6,35 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <h1 id="title">Some Survey Form</h1>
-    <p id="description"> some description</p>
-    <form id="survey-form">
-      <label id="name-label"> Name <input id="name" type="text" required placeholder="Charlos">       
+    <h1 id="title">Dog Eating Survey Form</h1>
+    <p id="description"> Inquiry on our users' dog eating preferences</p>
+    <form id="survey-form" class="container">
+      <label id="name-label" class="separator"> Name <input id="name" type="text" required placeholder="Charlos">       
       <label>
-      <label id="email-label" > Email <input id="email" type="email" required placeholder="charlos@gmail.com"> 
+      <label id="email-label" class="separator"> Email <input id="email" type="email" required placeholder="charlos@gmail.com"> 
       </label>
-      <label id="number-label"> Number <input id="number" type="number" min="0" max="100" placeholder="69"> </label>
+      <label id="number-label" class="separator"> Number <input id="number" type="number" min="0" max="100" placeholder="69"> </label>
       <select id="dropdown">
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-        <option>D</option>
+        <option>Pick one</option>
+        <option>Chihuahua</option>
+        <option>Poodle</option>
+        <option>French Bulldog</option>
+        <option>Aki</option>
       </select>
-      <label> eat dog <input name="radioOptions" type="radio" value="eat dog"> </label>
-      <label> no eat dog <input name="radioOptions" type="radio" value="no eat dog"> </label>
-      <label> Like <input type="checkbox" value="like"> </label>
-      <label> Share <input type="checkbox" value="share"> </label>
-      <label> Comment <input type="checkbox" value="comment"> </label>
-      <label> Subscribe <input type="checkbox" value="subscribe"> </label>
-      <label> <textarea type="textarea" placeholder="why are u god"></textarea> </label>
-      <label> <textarea placeholder="why are u dog"></textarea> </label>
+      <div class="separator-row">
+        <label> eat dog <input name="radioOptions" type="radio" value="eat dog"> </label>
+        <label> no eat dog <input name="radioOptions" type="radio" value="no eat dog"> </label>
+      </div>
+      <labe class="separator"> Describe how you would approach the act of eating a dog: <textarea type="textarea" placeholder="With a fork and knife, medium rare. Simple salt and pepper seasoning."></textarea> </label>
+      <label class="separator"> Describe the first bite: <textarea placeholder="Mouthwatering, flavorful explosion. Now that's what you call food."></textarea> </label>
+      <div class="separator-row">
+        <label> Like <span class="right"><input type="checkbox" value="like"></span> </label>
+        <label> Comment <span class="right"><input type="checkbox" value="comment"></span> </label>
+        <label> Subscribe <span class="right"><input type="checkbox" value="subscribe"></span> </label>
+        <label> Share <span class="right"><input type="checkbox" value="share"></span> </label>
+      </div>
+
+
       <label> <input id="submit" type="submit"> </label>
     </form>
   </body>
