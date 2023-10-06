@@ -1,16 +1,28 @@
+* {
+  box-sizing:border-box;
+}
+
 html {
   padding: 0;
   margin: 0;
 }
 
+body {
+  background-color: bisque;
+}
+
 h1, p {
     text-align: center;
     background-color: bisque;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
+
+p {
+  margin: 10px;
+}
   
-  label {
+label {
     display: block;
     margin: 0.5rem 0;
   }
@@ -24,11 +36,14 @@ h1, p {
   .separator {
     display: flex;
     flex-direction: column;
+    
   }
 
   .separator-row {
     display: flex;
     flex-direction: row;
+    display: flex;
+    justify-content:center;
   }
 
   .separator-right {
@@ -38,4 +53,15 @@ h1, p {
 
   .right {
     justify-content: flex-end;
+  }
+
+  input[type="submit"] {
+    background-color: rgb(73, 73, 73);
+    color: white;
+    width: 33%;
+  }
+
+  .submit, #dropdown {
+    display: flex;
+    justify-content:center;
   }

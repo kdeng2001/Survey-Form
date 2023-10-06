@@ -6,14 +6,17 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <h1 id="title">Dog Eating Survey Form</h1>
-    <p id="description"> Inquiry on our users' dog eating preferences</p>
-    <form id="survey-form" class="container">
-      <label for="name" class="separator"> Name <input id="name" type="text" required placeholder="Charlos">       
+    <header>
+      <h1 id="title">Dog Eating Survey Form</h1>
+      <p id="description"> (Inquiry on our users' dog eating preferences)</p>
+    </header>
+
+    <form id="survey-form" class="container" method="post" action="submit.html">
+      <label for="name" class="separator"> Name: <input id="name" type="text" required placeholder="Charlos">       
       <label>
-      <label for="email" class="separator"> Email <input id="email" type="email" required placeholder="charlos@gmail.com"> 
+      <label for="email" class="separator"> Email: <input id="email" type="email" required placeholder="charlos@gmail.com"> 
       </label>
-      <label for="number" class="separator"> Number <input id="number" type="number" min="0" max="100" placeholder="69"> </label>
+      <label for="number" class="separator"> Number: <input id="number" type="number" min="0" max="100" placeholder="69"> </label>
       <select id="dropdown">
         <option>Pick one</option>
         <option>Chihuahua</option>
@@ -25,8 +28,8 @@
         <label> eat dog <input name="radioOptions" type="radio" value="eat dog"> </label>
         <label> no eat dog <input name="radioOptions" type="radio" value="no eat dog"> </label>
       </div>
-      <labe class="separator"> Describe how you would approach the act of eating a dog: <textarea type="textarea" placeholder="With a fork and knife, medium rare. Simple salt and pepper seasoning."></textarea> </label>
-      <label class="separator"> Describe the first bite: <textarea placeholder="Mouthwatering, flavorful explosion. Now that's what you call food."></textarea> </label>
+      <labe class="separator"> Describe how you would approach the act of eating a dog: <textarea type="textarea" placeholder="Ex: With a fork and knife, medium rare. Simple salt and pepper seasoning."></textarea> </label>
+      <label class="separator"> Describe the first bite: <textarea placeholder="Ex: Mouthwatering, explosion of flavor. Now that's what you call food."></textarea> </label>
       <div class="separator-row">
         <label for="like"> Like <span class="right"><input id="like" type="checkbox" value="like"></span> </label>
         <label for="comment"> Comment <span class="right"><input id="comment" type="checkbox" value="comment"></span> </label>
@@ -35,7 +38,7 @@
       </div>
 
 
-      <label> <input id="submit" type="submit"> </label>
+      <label class="submit"> <input id="submit" type="submit" value="SUBMIT"> </label>
     </form>
   </body>
 </html>
