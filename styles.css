@@ -8,14 +8,15 @@ html {
 }
 
 body {
-  background-color: bisque;
+  background-color: rgb(73, 73, 73);
 }
 
 h1, p {
     text-align: center;
-    background-color: bisque;
+    background-color: rgb(73, 73, 73);
     padding: 0;
     margin: 0;
+    color: beige;
   }
 
 p {
@@ -25,12 +26,13 @@ p {
 label {
     display: block;
     margin: 0.5rem 0;
+    color: beige;
   }
   
   .container {
     display: flex;
     justify-content: center;
-    background-color: beige;
+    background-color: rgb(73, 73, 73);
   }
   
   .separator {
@@ -56,12 +58,25 @@ label {
   }
 
   input[type="submit"] {
-    background-color: rgb(73, 73, 73);
-    color: white;
+    background-color: beige;
+    color: rgb(73, 73, 73);
     width: 33%;
   }
 
   .submit, #dropdown {
     display: flex;
     justify-content:center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #submit:hover {
+    cursor: pointer;
+    background-color: rgb(233, 177, 109);
+    color: rgb(73, 73, 73);
+  }
+
+  #name, #email, #number, #dropdown, textarea {
+    background-color: rgb(73,73,73);
+    color: beige;
   }
